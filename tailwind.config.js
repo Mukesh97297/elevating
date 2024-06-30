@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "about-us": "url('/images/layout2.png')",
+      },
+      fontFamily: {
+        neus: ["TT Firs Neue Trl", "sans-serif"],
       },
     },
   },
