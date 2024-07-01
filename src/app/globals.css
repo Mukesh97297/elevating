@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/tt-firs-neue-trl');
+
 
 @tailwind base;
 @tailwind components;
@@ -6,19 +6,119 @@
 
 @layer base {
   .heading{
-    @apply lg:text-[80px] lg:leading-[96px] sm:text-[40px] sm:leading-[48px] text-[28px] leading-8 font-medium font-neus
+    @apply xl:text-[80px] md:text-[40px] text-[28px] xl:leading-[96px] sm:leading-10 leading-9 font-medium opacity-[1px] transform-none font-var-roman
   }
   .paragraph{
-    @apply sm:text-xl text-sm font-normal font-neus
+    @apply font-normal lg:text-xl text-sm opacity-[1px] transform-none font-var-italic
   }
   .main-button {
-    @apply common-button gradient transition-all duration-100 h-10 flex items-center justify-center font-bold italic text-white lg:text-base text-sm leading-[100%] capitalize w-full px-4;
+    @apply common-button gradient transition-all duration-100 h-10 flex items-center justify-center font-bold font-var-italic italic text-white lg:text-base text-sm leading-[100%] capitalize w-full px-4;
   }
+}
+@font-face {
+  font-family: "TT Firs Neue Trial Black Border";
+  src: url("/src/assets/TT_Firs_Neue_Bold_Outline_Trial.otf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Black";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Black.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Black Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Black_Italic.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Bold";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Bold.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Bold Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Bold_Italic.ttf");
+}
+@font-face {
+  font-family: "TT Firs Neue Trial semibold";
+  src: url("/src/assets/TT_Firs_Neue_Trial_semibold.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial semibold Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_semibold_Italic.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial ExtraBold";
+  src: url("/src/assets/TT_Firs_Neue_Trial_ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial ExtraBold Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_ExtraBold_Italic.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial ExtraLight";
+  src: url("/src/assets/TT_Firs_Neue_Trial_ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial ExtraLight Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_ExtraLight_Italic.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Italic.ttf");
+}
+@font-face {
+  font-family: "TT Firs Neue Trial Light";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Light.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Light Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Light_Italic.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Medium";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Medium.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Medium Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Medium_Italic.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Regular";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Thin";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Thin.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Thin Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Thin_Italic.ttf");
+}
+@font-face {
+  font-family: "TT Firs Neue Trial Var Italic";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Var_Italic.ttf");
+}
+
+@font-face {
+  font-family: "TT Firs Neue Trial Var Roman";
+  src: url("/src/assets/TT_Firs_Neue_Trial_Var_Roman.ttf");
 }
 
 
-
-   .our-services-card {
+.our-services-card {
   position: relative;
 }
 .our-services-card::before {
@@ -26,8 +126,8 @@
   position: absolute;
   inset: 0;
   border-radius: 30px;
-  overflow: hidden;
-  padding: 1px;
+ overflow: hidden;
+  padding: 2px;
   background: linear-gradient(97.93deg, #3441CE -2.83%, #CF1AAF 99.13%);
   -webkit-mask: linear-gradient(97.93deg, #fff -2.83%, #fff 99.13%) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -52,6 +152,20 @@
   background: white;
   border-radius: 3px 10px 3px 10px;
 }
-body{
+/* body{
   font-family:"TT Firs Neue Trl", "sans-serif";
+} */
+.outlined-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
 }
+
+/* .gradient-border{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-gradient-from: #3441ce var(--tw-gradient-from-position);
+    --tw-gradient-to: rgba(52, 65, 206, 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: #cf1aaf var(--tw-gradient-to-position);
+    padding: 1px;
+    border-radius: 30px;
+} */

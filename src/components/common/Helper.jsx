@@ -63,6 +63,7 @@ export const eventcardsitems = [
     heading: "The ESL One 2024",
     description:
       "ESL One Cologne is one of the premier CS:GO tournaments featuring the top teams from around the world competing for a substantial prize pool and the coveted title of champions.",
+    dates: ["20/06/2024"],
   },
   {
     id: "2",
@@ -70,6 +71,7 @@ export const eventcardsitems = [
     heading: "The International 2024",
     description:
       "The International is the biggest annual Dota 2 championship hosted by Valve. It gathers the best teams globally to compete for the largest prize pool in esports history.",
+    dates: ["20/06/2024", "USA", "Dota 2"],
   },
   {
     id: "3",
@@ -77,6 +79,7 @@ export const eventcardsitems = [
     heading: "League of Legends World Championship 2024",
     description:
       "The World Championship is the pinnacle event for League of Legends, featuring the top teams from each region battling for the Summoner’s Cup and international glory.",
+    dates: ["20/06/2024", "USA", "League of Legends"],
   },
   {
     id: "4",
@@ -84,6 +87,7 @@ export const eventcardsitems = [
     heading: "Overwatch League Grand Finals 2024",
     description:
       "The Overwatch League Grand Finals concludes the season with the top teams competing for the championship title in a best-of-seven series.",
+    dates: ["20/06/2024", "USA", "Overwatch"],
   },
 ];
 export const ourpartnercarditems = [
